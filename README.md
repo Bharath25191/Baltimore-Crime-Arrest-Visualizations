@@ -29,7 +29,7 @@ The rows which had null values were then removed to obtain cleansed CSV files, t
 <br><br>
 
 <b>Data Visualization</b>:<br>
-I made the following visualizations to derive insights from the datasets: -
+I made the following visualizations to derive insights from the datasets: -<br>
 1.	Line plot<br>
 2.	Bar Graph<br>
 3.	Geocoded Heat Maps<br>
