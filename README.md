@@ -1,23 +1,35 @@
 # Baltimore-Crime-Arrest-Visualizations<br>
 </h>A visualization project on Crime/Arrest characteristics of Baltimore City Province</h>
 
-<b>Introduction</b>:
-This report aims to present an exploratory research done on the Los Angeles Payroll Dataset to better understand the Statistical Methods and use them in answering real life problems that the data poses. The Hypothesis Testing using different techniques like Normal Distribution, Students T-Test and ANOVA has been performed on various features of the dataset to evaluate the validity of the various assumptions presumed as Null hypothesis. The report also presents the work done to predict the Annual Salary and Average Health Cost making use of Linear regression and RandomForest (Decision trees) algorithms. 
+<b>Introduction</b>
+The aim of this project is to study the Crime and Arrest public datasets of Baltimore for understanding the pattern through visualization and to derive meaningful insights from these visualizations. Making use of the coordinates of the crimes, the police department can understand the trends of crime with respect to the time and location, these analyses will help them answer key questions like identifying the sensitive areas, the time at which most crimes occur, crime types etc. These studies will help them come up with better strategies to cope with crimes. I have also made a comparison between the crimes and arrests to analyse the efficiency of the police forces using an array of visualizations.
+<b>Data Source</b>
+The data was fetched from the Baltimore Government site by downloading the arrests and crimes data in CSV format. The site also provides a SODA API to get live data, but it has a limitation of fetching only 50,000 records. As both the datasets are big (more than 100000 records), I preferred uploading the dataset rather than API calls, as it provides a faster access and doesn’t impose any limitation on the records.
+The datasets have information such as Metadata: Arrest-ID, Age, Sex, Crime Date, Arrest Date, crime type, locations etc.
+While all the fields provide significant information about the nature of the crime and arrest, I have filtered certain fields for the visualizations.
+The Data sources can be explored through the link https://data.baltimorecity.gov/
 
-<b>Dataset</b>:
-Los Angeles Payroll Data of four subsequent years starting from 2013 to 2016 under the Finance/Business Division has been taken for performing the statistical analysis. The dataset is self-explanatory giving an insight into the payroll of the employees in different Departments segmented as per their job titles over the four years. The motivation behind selecting this dataset is that it poses a lot of questions which are explored while working on this project, using the statistical methods. The dataset tells about the employment type, Hourly or Event rate of different personnel and their projected salaries, it depicts the Base pay, Quarterly pay and the annual pay of the individual and what kind of Bonuses, overtime pay and benefits they receive. The data also tells about the Job class and the paygrade of the employees.
+<b>Technology Used</b>
+Anaconda Python Notebook was used to do the cleansing, data transformation and visualizations.
 
-<b>Technologies Used</b>:
-Python 3.5:
-To perform all the Hypothesis Tests, and to implement and run the tests Anaconda’s Jupyter Notebook is used.
-Open refine:
-Before starting to work on the dataset, the first step is to explore and fully understand what the data
-Is. After comprehending the dataset we cleansed the data and removed the null values and the outliers, formatting the dataset. For data cleansing, Open Refine has been utilized to cleanse the dataset.
+<b>Process</b>
+The project was mainly divided into two parts:
 
-<b>Questions Explored</b>:
+1.	Data Cleansing 
+2.	Data Visualization
 
-1.	Using the Hypothesis testing with Normal distribution, determine whether the Annual Salaries of the employees increase in the Financial year 2016 as compared to 2015?
-2.	Using the Hypothesis testing with Student’s T-Distribution, check if  the Average Health Cost of the Employees increases over a period of one year: 2014-2015?
-3.	Using ANOVA, find if in three subsequent years 2014, 2015, 2016 – does the mean of the Base salary of the Electricians remains the same?
-4.	Will the Linear Regressor be able to predict the Average Benefit cost based on Annual and quarterly Payments?
-5.	Will the Random forest Regressor making use of the Decision Trees be able to predict the Annual salary based on the Job title?
+<b>Data Cleansing</b>:
+The first step was to load both the datasets into the Jupyter Notebook. After loading the data was analysed in terms of missing rows, data types of columns, relevance of fields etc.
+It was observed that the timestamp was in the format of yyyymmdd hhmmss. So, it required processing to extract the data and time details.
+The coordinates were also stacked to a single field and a logic was developed to separate them into latitudes and longitudes.
+The unnecessary fields were then identified and dropped from the datasets for better clarity while visualizing and to save processing time.
+The rows which had null values were then removed to obtain cleansed CSV files, this process was carried out for both the datasets.
+
+<b>Data Visualization</b>:
+I made the following visualizations to derive insights from the datasets: -
+1.	Line plot
+2.	Bar Graph
+3.	Geocoded Heat Maps
+4.	Terrain Maps
+5.	Heat Maps
+
