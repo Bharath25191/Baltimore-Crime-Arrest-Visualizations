@@ -16,7 +16,7 @@ Anaconda Python Notebook was used to do the cleansing, data transformation and v
 <b>Process</b><br>
 The project was mainly divided into two parts:
 
-1.	Data Cleansing 
+1.	Data Cleansing<br> 
 2.	Data Visualization
 <br><br>
 
@@ -30,9 +30,9 @@ The rows which had null values were then removed to obtain cleansed CSV files, t
 
 <b>Data Visualization</b>:<br>
 I made the following visualizations to derive insights from the datasets: -
-1.	Line plot
-2.	Bar Graph
-3.	Geocoded Heat Maps
-4.	Terrain Maps
-5.	Heat Maps
+1.	Line plot<br>
+2.	Bar Graph<br>
+3.	Geocoded Heat Maps<br>
+4.	Terrain Maps<br>
+5.	Heat Maps<br>
 
