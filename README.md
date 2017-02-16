@@ -12,19 +12,22 @@ The Data sources can be explored through the link https://data.baltimorecity.gov
 <b>Technology Used</b>
 Anaconda Python Notebook was used to do the cleansing, data transformation and visualizations.
 <br>
-<b>Process</b>
+<br>
+<b>Process</b><br>
 The project was mainly divided into two parts:
 
 1.	Data Cleansing 
 2.	Data Visualization
-<br>
+<br><br>
+
 <b>Data Cleansing</b>:
 The first step was to load both the datasets into the Jupyter Notebook. After loading the data was analysed in terms of missing rows, data types of columns, relevance of fields etc.
 It was observed that the timestamp was in the format of yyyymmdd hhmmss. So, it required processing to extract the data and time details.
 The coordinates were also stacked to a single field and a logic was developed to separate them into latitudes and longitudes.
 The unnecessary fields were then identified and dropped from the datasets for better clarity while visualizing and to save processing time.
 The rows which had null values were then removed to obtain cleansed CSV files, this process was carried out for both the datasets.
-<br>
+<br><br>
+
 <b>Data Visualization</b>:
 I made the following visualizations to derive insights from the datasets: -
 1.	Line plot
